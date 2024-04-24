@@ -8,7 +8,11 @@ def navbar_component() -> rx.Component:
             class_name="w-3/12"
         ),
         rx.box(
-            rx.button("Agenda una reunión"),
+            rx.link(
+                rx.button("Agenda una reunión"),
+                href="https://calendly.com/helmcode/work",
+                is_external=True
+            ),
             class_name="w-3/6 h-2/3"
         ),
         class_name="flex items-center justify-between bg-blue-950 w-full h-16 px-6",

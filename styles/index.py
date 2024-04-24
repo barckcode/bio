@@ -24,7 +24,7 @@ class Spacing(Enum):
 
 
 class Color(Enum):
-    PRIMARY = "#14A1F0"
+    PRIMARY = "#e5f0ff"
     SECONDARY = "#087ec4"
     BACKGROUND = "#0C151D"
     CONTENT = "#171F26",
@@ -38,6 +38,10 @@ class TextColor(Enum):
 
 
 base = {
+    "color": TextColor.BODY.value,
+    rx.heading: {
+        "color": TextColor.HEADER.value
+    },
     rx.button: {
         "width": "100%",
         "height": "100%",
