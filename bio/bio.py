@@ -1,6 +1,7 @@
 import reflex as rx
 from styles.index import base
 from components.navbar import navbar_component
+from components.footer import footer_component
 from views.header import header_view
 from views.substack import subtack_view
 
@@ -10,6 +11,7 @@ def index():
         navbar_component(),
         header_view(),
         subtack_view(),
+        footer_component(),
         class_name="bg-blue-950 w-full h-full px-6"
     )
 
