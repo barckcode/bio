@@ -12,29 +12,13 @@ class Size(Enum):
     VERY_BIG = "4em"
 
 
-class Spacing(Enum):
-    ZERO = "0"
-    VERY_SMALL = "1"
-    SMALL = "3"
-    DEFAULT = "4"
-    LARGE = "5"
-    BIG = "6"
-    MEDIUM_BIG = "7"
-    VERY_BIG = "9"
-
-
 class Color(Enum):
-    PRIMARY = "#e5f0ff"
-    SECONDARY = "#087ec4"
-    BACKGROUND = "#0C151D"
-    CONTENT = "#171F26",
     PURPLE = "#6c62ff"
 
 
 class TextColor(Enum):
     HEADER = "#F1F2F4"
     BODY = "#C3C7CB"
-    FOOTER = "#A3ABB2"
 
 
 base = {
