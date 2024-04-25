@@ -44,7 +44,6 @@ def project_card(image: str, title: str, url: str, description: str, revenue: st
     )
 
 
-
 def project_component() -> rx.Component:
     projects = [
         (

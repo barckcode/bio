@@ -23,9 +23,8 @@ def header_view() -> rx.Component:
             class_name="py-6 text-neutral-50 text-sm mb-4"
         ),
         rx.box(
-            rx.heading("Proyectos destacados"),
+            rx.heading("Proyectos"),
             project_component(),
-            class_name=""
         ),
-        class_name="w-full h-auto"
+        class_name="w-full h-auto mb-4"
     )
