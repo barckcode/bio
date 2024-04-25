@@ -24,7 +24,7 @@ def trusted_component() -> rx.Component:
 
     return rx.container(
         rx.heading(
-            "TRUSTED BY",
+            "TRUSTED BY ⏪⏩",
             size="1"
         ),
         rx.scroll_area(
@@ -36,5 +36,5 @@ def trusted_component() -> rx.Component:
                 class_name="flex gap-4"
             )
         ),
-        class_name="w-full text-center h-auto py-6 mb-4"
+        class_name="w-full h-auto py-6 mb-4"
     )
