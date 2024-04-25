@@ -40,7 +40,8 @@ class TextColor(Enum):
 base = {
     "color": TextColor.BODY.value,
     rx.heading: {
-        "color": TextColor.HEADER.value
+        "color": TextColor.HEADER.value,
+        "margin-bottom": "0.5rem"
     },
     rx.button: {
         "width": "100%",

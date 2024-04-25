@@ -15,5 +15,5 @@ def navbar_component() -> rx.Component:
             ),
             class_name="w-3/6 h-2/3"
         ),
-        class_name="flex items-center justify-between bg-blue-950 w-full h-16 px-6",
+        class_name="flex items-center justify-between w-full h-16",
     )

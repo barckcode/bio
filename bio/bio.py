@@ -8,6 +8,7 @@ def index():
     return rx.container(
         navbar_component(),
         header_view(),
+        class_name="bg-blue-950 w-full h-full px-6"
     )
 
 
