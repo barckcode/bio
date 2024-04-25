@@ -4,7 +4,10 @@ import reflex as rx
 def subtack_view() -> rx.Component:
     return rx.container(
         rx.box(
-            rx.heading("Newsletter"),
+            rx.box(
+                rx.heading("Newsletter"),
+                class_name="text-center"
+            ),
             class_name="mb-4"
         ),
         rx.html(

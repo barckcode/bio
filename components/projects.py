@@ -10,7 +10,7 @@ def project_card(image: str, title: str, url: str, description: str, revenue: st
             ),
             href=url,
             is_external=True,
-            class_name="w-1/2 h-full"
+            class_name="w-1/2 md:w-24 lg:w-32 h-full md:h-24 lg:h-32"
         ),
         rx.box(
             rx.link(
@@ -36,11 +36,11 @@ def project_card(image: str, title: str, url: str, description: str, revenue: st
                     size="1",
                     weight="bold"
                 ),
-                class_name="flex py-2 gap-4"
+                class_name="flex md:justify-between py-2 gap-4"
             ),
-            class_name="w-full h-full"
+            class_name="w-auto h-full"
         ),
-        class_name="flex py-6 gap-4 border-b border-blue-200"
+        class_name="flex md:flex-col md:items-center py-6 gap-4 border-b border-blue-200 md:border-0"
     )
 
 
@@ -69,5 +69,5 @@ def project_component() -> rx.Component:
             project_card(image, title, url, description, revenue, info)
             for image, title, url, description, revenue, info in projects
         ],
-        class_name="divide-blue-200"
+        class_name="projects"
     )

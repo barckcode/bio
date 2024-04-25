@@ -8,15 +8,19 @@ from views.substack import subtack_view
 
 def index():
     return rx.container(
-        navbar_component(),
-        header_view(),
-        subtack_view(),
-        footer_component(),
-        class_name="bg-blue-950 w-full h-full px-6"
+        rx.box(
+            navbar_component(),
+            header_view(),
+            subtack_view(),
+            footer_component(),
+            class_name="max-w-screen-lg w-full h-full px-6"
+        ),
+        class_name="bg-blue-950 w-full h-full md:text-center"
     )
 
 
 app = rx.App(
-    style=base
+    style=base,
+    stylesheets=["/styles.css"],
 )
 app.add_page(index)

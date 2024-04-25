@@ -13,7 +13,7 @@ def navbar_component() -> rx.Component:
                 href="https://calendly.com/helmcode/work",
                 is_external=True
             ),
-            class_name="w-3/6 h-2/3"
+            class_name="w-3/6 md:w-2/6 h-2/3"
         ),
         class_name="flex items-center justify-between w-full h-16",
     )
