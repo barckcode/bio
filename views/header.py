@@ -9,7 +9,8 @@ def header_view() -> rx.Component:
         rx.box(
             rx.image(
                 src="/profile.jpg",
-                class_name="rounded-full w-ful h-full"
+                class_name="rounded-full w-ful h-full",
+                alt="Cristian photo"
             ),
             rx.box(
                 rx.heading("Cristian Córdova"),

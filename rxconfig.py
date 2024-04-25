@@ -6,8 +6,8 @@ class AppConfig(rx.Config):
 
 config = AppConfig(
     app_name="bio",
+    next_compression=True,
     db_url="sqlite:///reflex.db",
-    env=rx.Env.DEV,
     tailwind={
         "theme": {
             "screens": {

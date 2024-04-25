@@ -22,5 +22,6 @@ def index():
 app = rx.App(
     style=base,
     stylesheets=["/styles.css"],
+    html_lang="es"
 )
 app.add_page(index)

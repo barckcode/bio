@@ -4,7 +4,8 @@ import reflex as rx
 def company_logo(image: str) -> rx.Component:
     return rx.image(
         src=f"/{image}",
-        class_name="rounded-lg w-8 lg:w-14 h-8 lg:h-14"
+        class_name="rounded-lg w-8 lg:w-14 h-8 lg:h-14",
+        alt="Company logo"
     )
 
 

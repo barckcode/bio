@@ -6,7 +6,8 @@ def project_card(image: str, title: str, url: str, description: str, revenue: st
         rx.link(
             rx.image(
                 src=f"/{image}",
-                class_name="rounded-lg"
+                class_name="rounded-lg",
+                alt="Project logo"
             ),
             href=url,
             is_external=True,
